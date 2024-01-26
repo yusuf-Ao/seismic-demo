@@ -21,10 +21,9 @@ export const authLogin = createAsyncThunk(
             const profile = await instance.get('/auth/user',{ headers: { 'Authorization': `Bearer ${data.data.bearerAccessToken}` } })
 
             const USER = {
-                accessToken: data.data.token,
+                accessToken: data.data.bearerAccessToken,
                 profile: profile.data.data
             }
-
 
             await localStorage.setItem('user', JSON.stringify(USER))
             toast.success('Login successful')

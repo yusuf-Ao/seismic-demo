@@ -1,11 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { authLogin, authSignup } from "../actions/auth.actions";
 
+
 const authSlice = createSlice ({
     name: 'auth',
     initialState: {
         token : null,
-        user: null,
+        user: localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')) : null,
         authLoading: false
     },
     extraReducers: (builder) => {
@@ -20,9 +21,8 @@ const authSlice = createSlice ({
             state.authLoading = false
         })
 
-        builder.addCase(authSignup.fulfilled, (state, actions) => {
+        builder.addCase(authSignup.fulfilled, (state) => {
             state.authLoading = false
-            state.user = actions.payload
         })
         builder.addCase(authSignup.pending, (state) => {
             state.authLoading = true
