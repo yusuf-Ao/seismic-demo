@@ -1,3 +1,23 @@
+
+export const status_colors = {
+    Completed: "#009D1D",
+    Upcoming: "#030200",
+    'In Progress' : '#0026e6',
+}
+
+export const toggle_options = [
+    {
+        label: "Data",
+        value: "data",
+        selectedBackgroundColor: "#e46600",
+    },
+    {
+        label: "GIS",
+        value: "gis",
+        selectedBackgroundColor: "#e46600"
+    }
+]
+
 export const ProjectData = [
     {
     "id": 1,
@@ -53,11 +73,11 @@ export const ProjectData = [
     "description": "Construction of new market",
     "startDate": "2023-04-01",
     "estimatedCompletionDate": "2024-04-01",
-    "status": "Upcoming",
+    "status": "In Progress",
     "location": "Kano",
     "lat": 12.0022,
     "long": 8.591,
-    "percentageDone": 0
+    "percentageDone": 4
   },
   {
     "id": 6,
@@ -77,11 +97,11 @@ export const ProjectData = [
     "description": "Construction of a modern shopping mall",
     "startDate": "2023-06-01",
     "estimatedCompletionDate": "2024-06-01",
-    "status": "Upcoming",
+    "status": "In Progress",
     "location": "Abeokuta",
     "lat": 7.1557,
     "long": 3.3451,
-    "percentageDone": 0
+    "percentageDone": 16
   },
   {
     "id": 8,
@@ -113,11 +133,11 @@ export const ProjectData = [
     "description": "Construction of a sports complex",
     "startDate": "2023-09-01",
     "estimatedCompletionDate": "2024-09-01",
-    "status": "Upcoming",
+    "status": "In Progress",
     "location": "Jos",
     "lat": 9.9333,
     "long": 8.8833,
-    "percentageDone": 0
+    "percentageDone": 24
   },
   {
     "id": 11,
@@ -149,11 +169,11 @@ export const ProjectData = [
     "description": "Development of a new housing estate",
     "startDate": "2023-12-01",
     "estimatedCompletionDate": "2024-12-01",
-    "status": "Upcoming",
+    "status": "In Progress",
     "location": "Warri",
     "lat": 5.5167,
     "long": 5.75,
-    "percentageDone": 0
+    "percentageDone": 37
   },
   {
     "id": 14,
@@ -185,11 +205,11 @@ export const ProjectData = [
     "description": "Revitalization of an existing public park",
     "startDate": "2024-03-01",
     "estimatedCompletionDate": "2025-03-01",
-    "status": "Upcoming",
+    "status": "In Progress",
     "location": "Owerri",
     "lat": 5.4836,
     "long": 7.0333,
-    "percentageDone": 0
+    "percentageDone": 2
   },
   {
     "id": 17,
@@ -197,11 +217,11 @@ export const ProjectData = [
     "description": "Initiative to promote community farming",
     "startDate": "2024-04-01",
     "estimatedCompletionDate": "2025-04-01",
-    "status": "Upcoming",
+    "status": "In Progress",
     "location": "Asaba",
     "lat": 6.2032,
     "long": 7.0086,
-    "percentageDone": 0
+    "percentageDone": 67
   },
   {
     "id": 18,
@@ -221,11 +241,11 @@ export const ProjectData = [
     "description": "Upgrade of community health center facilities",
     "startDate": "2024-06-01",
     "estimatedCompletionDate": "2025-06-01",
-    "status": "Upcoming",
+    "status": "In Progress",
     "location": "Umuahia",
     "lat": 5.5231,
     "long": 7.486,
-    "percentageDone": 0
+    "percentageDone": 1
   },
   {
     "id": 20,
@@ -233,11 +253,11 @@ export const ProjectData = [
     "description": "Training program to develop IT skills",
     "startDate": "2024-07-01",
     "estimatedCompletionDate": "2025-07-01",
-    "status": "Upcoming",
+    "status": "In Progress",
     "location": "Yola",
     "lat": 9.2084,
     "long": 12.4818,
-    "percentageDone": 0
+    "percentageDone": 93
   },
   {
     "id": 21,
@@ -245,11 +265,11 @@ export const ProjectData = [
     "description": "Renovation of a historic heritage site",
     "startDate": "2024-08-01",
     "estimatedCompletionDate": "2025-08-01",
-    "status": "Upcoming",
+    "status": "In Progress",
     "location": "Bauchi",
     "lat": 10.3158,
     "long": 9.8433,
-    "percentageDone": 0
+    "percentageDone": 12
   },
   {
     "id": 22,
@@ -269,11 +289,11 @@ export const ProjectData = [
     "description": "Implementation of sustainable agriculture practices",
     "startDate": "2024-10-01",
     "estimatedCompletionDate": "2025-10-01",
-    "status": "Upcoming",
+    "status": "In Progress",
     "location": "Minna",
     "lat": 9.6152,
     "long": 6.5476,
-    "percentageDone": 0
+    "percentageDone": 50
   },
   {
     "id": 24,
@@ -293,10 +313,10 @@ export const ProjectData = [
     "description": "Program to empower youth with skills",
     "startDate": "2024-12-01",
     "estimatedCompletionDate": "2025-12-01",
-    "status": "Upcoming",
+    "status": "In Progress",
     "location": "Makurdi",
     "lat": 7.7249,
     "long": 8.5306,
-    "percentageDone": 0
+    "percentageDone": 20
   }
 ]

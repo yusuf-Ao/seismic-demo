@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { avatar } from '../../assets';
 import { useSelector } from 'react-redux';
+import { avatar } from '../../assets';
 import Project from './Project';
 import Summary from './Summary';
 
