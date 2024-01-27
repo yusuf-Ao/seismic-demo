@@ -13,7 +13,7 @@ export const authLogin = createAsyncThunk(
     'auth/login',
     async ({ formData, toast, navigate },{rejectWithValue}) => {
        try {
-            localStorage.removeItem('user');
+            localStorage.removeItem('seismic-user');
             const { data } = await instance.post('/auth/login', formData)
 
             console.log({data});
@@ -25,9 +25,9 @@ export const authLogin = createAsyncThunk(
                 profile: profile.data.data
             }
 
-            await localStorage.setItem('user', JSON.stringify(USER))
+            await localStorage.setItem('seismic-user', JSON.stringify(USER))
             toast.success('Login successful')
-            navigate('/home', { replace: true })
+            navigate('/', { replace: true })
 
             return USER
         } catch (error) {
@@ -51,7 +51,7 @@ export const authSignup = createAsyncThunk(
             console.log({data})
 
             toast.success('Account created successfully.')
-            navigate('/', { replace: true })
+            navigate('/login', { replace: true })
         } catch (error) {
             if (error.response.data.reason !== null) {
                 toast.error(error.response.data.message)

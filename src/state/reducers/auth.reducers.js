@@ -6,7 +6,7 @@ const authSlice = createSlice ({
     name: 'auth',
     initialState: {
         token : null,
-        user: localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')) : null,
+        user: localStorage.getItem('seismic-user') ? JSON.parse(localStorage.getItem('seismic-user')) : null,
         authLoading: false
     },
     extraReducers: (builder) => {

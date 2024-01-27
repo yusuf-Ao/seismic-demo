@@ -163,7 +163,7 @@ const Signup = () => {
             <div className='flex justify-center w-full text-gray-light text-[12px]'>
               <p>
                 Already have an account?
-                <Link to='/' className='text-primary'>
+                <Link to='/login' className='text-primary'>
                   &nbsp; Login &nbsp;
                 </Link>
               </p>
